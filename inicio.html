@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Tela Inicial</title>
+</head>
+<body>
+    <button type="button" class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="left">
+        <div class="top">
+            <a class="yellow" href="#"><span>+</span>Nova Análise</a>
+            <a href="#"><img src="/imgs/ChatText.png" alt="Chat">Nxo Ética</a>
+            <a href="#"><img src="/imgs/ChatText.png" alt="Chat">Impacto Nxo</a>
+        </div>
+        <div class="bottom">
+            <a href="#"><img src="/imgs/Trash.png" alt="Lixeira">Apagar Análises</a>
+            <a href="#"><img src="/imgs/IconSet.png" alt="Lixeira">Modo Claro</a>
+            <a href="#"><img src="/imgs/User.png" alt="Usuario">Minha Conta</a>
+            <a href="#"><img src="/imgs/IconSet (1).png" alt="Lixeira">Atualizações</a>
+            <a href="#"><img src="/imgs/SignOut.png" alt="Saida">Sair</a>
+        </div>
+    </div>
+    <div class="right">
+        <div class="center">
+            <img src="/imgs/image 1 (2).png" alt="logo da marca">
+            <p>Além de Conexões</p>
+        </div>
+        <div class="input">
+            <input type="text" name="search" id="search" placeholder="Pesquise aqui seu perfil...">
+            <img src="/imgs/Search.png" alt="Botão de pesquisa">
+        </div>
+    </div>
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+          const nav = document.querySelector('.left');
+          nav.classList.toggle('active'); // Adiciona ou remove a classe 'active' para mostrar/esconder o menu
+      });     
+    </script>
+</body>
+</html>
